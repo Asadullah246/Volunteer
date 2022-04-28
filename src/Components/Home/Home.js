@@ -14,7 +14,7 @@ const Home = () => {
     const navigate=useNavigate();
   
     useEffect(()=>{
-        axios.get('http://localhost:5000/volunteer')
+        axios.get('https://morning-atoll-59106.herokuapp.com/volunteer')
     .then(response=>{
 
         setVolunteer(response.data)

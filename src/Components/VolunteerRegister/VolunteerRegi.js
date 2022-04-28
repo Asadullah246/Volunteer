@@ -12,7 +12,7 @@ const VolunteerRegi = () => {
         const books=e.target.organicBook.value;
         const date=e.target.date.value;
 
-        axios.post('http://localhost:5000/newVolunteer', {
+        axios.post('https://morning-atoll-59106.herokuapp.com/newVolunteer', {
             name: name,
             email: email,
             desc: desc,

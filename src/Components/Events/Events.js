@@ -9,7 +9,7 @@ const Events = () => {
     const [events, setEvents]=useState([]);
     const [error, setError]=useState();
     useEffect(()=>{
-        axios.get('http://localhost:5000/allEvents')
+        axios.get('https://morning-atoll-59106.herokuapp.com/allEvents')
     .then(response=>{
 
         setEvents(response.data)
@@ -32,7 +32,7 @@ const Events = () => {
 
         axios({
             method: 'post',
-            url: 'http://localhost:5000/addEvents',
+            url: 'https://morning-atoll-59106.herokuapp.com/addEvents',
             data: {
                 name: name,
                 details: details,
@@ -50,7 +50,7 @@ const Events = () => {
           });
 
 
-    //     axios.post('http://localhost:5000/addEvents', {
+    //     axios.post('https://morning-atoll-59106.herokuapp.com/addEvents', {
     //         name: name,
     //         details: details,
     //         image: url

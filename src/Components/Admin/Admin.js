@@ -6,7 +6,7 @@ const Admin = () => {
     const[members, setMembers]=useState([]);
 
     useEffect(()=>{
-        axios.get('http://localhost:5000/volunteerList')
+        axios.get('https://morning-atoll-59106.herokuapp.com/volunteerList')
     .then(response=>{
 
         setMembers(response.data)
@@ -21,7 +21,7 @@ const Admin = () => {
 
     const deleteMember=id=>{
         // e.preventDefault();
-        const url=`http://localhost:5000/volunteerList/${id}`;
+        const url=`https://morning-atoll-59106.herokuapp.com/volunteerList/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

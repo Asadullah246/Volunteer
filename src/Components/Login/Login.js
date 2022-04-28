@@ -22,7 +22,7 @@ const Login = () => {
       }
       if(user){
         // console.log("user ache");
-        axios.post('http://localhost:5000/login', {
+        axios.post('https://morning-atoll-59106.herokuapp.com/login', {
             email: user.email
    
       })
