@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-section{
+    margin-top: 10px;
+}
+
+.navbar-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* navbar logo  */
+.nav-logo{
+    height: 35px;
+    width: auto;
+}
+.nav-links a{
+    text-decoration: none;
+    margin-right: 10px;
+
+}
+.register-button{
+    background-color: #3F90FC;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 7px;
+    
+}
+.admin-btn{
+    background-color: #434141;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 7px;
+    
+}
+
+/* volunteer details  */
+
+.volunteer-div{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+    /* grid-template-columns: repeat(3, 1fr); */
+}
+.single-data{
+    width: 250px;
+}
+.single-data img{
+    width: 100%;
+    height: auto;
+}
